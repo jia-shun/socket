@@ -40,7 +40,9 @@ Selector()轮询的事件就是一个个的selectKey。
 
 Tomcat调优：将server.xml中的connector的protocol改成nio是一种方式。
 
-### AIO:和底层连接的更密切，连selector()都省了。
+### AIO:
+
+和底层连接的更密切，连selector()都省了。
 
 ### RPC：
 
