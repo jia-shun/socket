@@ -1,4 +1,4 @@
-#####NIO：
+### NIO：
 是基于事件、通知模型：
 基于观察者模式：观察者注册事件，服务方通知观察者。
 1：JVM是观察者，JVM进程启动的时候向Linux内核绑定ip+port注册连接接入事件。
@@ -19,11 +19,11 @@
 这个channel和连接池中的连接一样，都是有标示的。
 Selector()轮询的事件就是一个个的selectKey。
 
-Tomcat调优：将server.xml中的connector的protocol改成nio就可以了。
+**Tomcat调优：将server.xml中的connector的protocol改成nio是一种方式。**
 
-AIO:和底层连接的更密切，连selector()都省了。
+### AIO:和底层连接的更密切，连selector()都省了。
 
-RPC：
+### RPC：
 使用技术：Spring IOC AOP 扫描注解 ，反射+动态代理
 目标：服务A远程调用服务B的接口。
 1：通过注解注入一个接口。
@@ -33,7 +33,7 @@ RPC：
 5：远程服务器B收到请求，反序列化解析请求并返回序列化的结果。
 6：服务A将结果返回给客户端。
 
-Netty:
+### Netty:
 
 
 
