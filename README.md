@@ -1,4 +1,4 @@
-NIO：
+### NIO：
 
 是基于事件、通知模型：
 
@@ -40,9 +40,9 @@ Selector()轮询的事件就是一个个的selectKey。
 
 Tomcat调优：将server.xml中的connector的protocol改成nio是一种方式。
 
-AIO:和底层连接的更密切，连selector()都省了。
+### AIO:和底层连接的更密切，连selector()都省了。
 
-RPC：
+### RPC：
 
 使用技术：Spring IOC AOP 扫描注解 ，反射+动态代理
 
@@ -60,7 +60,7 @@ RPC：
 
 6：服务A将结果返回给客户端。
 
-Netty:
+### Netty:
 
 
 
